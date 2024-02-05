@@ -57,7 +57,6 @@ allHeros = [...marvel_heros, ...dc_heros] // spread operator
 console.log(allHeros) // // ['Ironman', 'Thor', 'Spiderman', 'CaptainAmerica','Superman', 'Batman', 'Flash']
 
 
-
 arrayWithinArray = [1, 2, 3, [4, 5, 6, [7, 8]], [9, 10, 11], [12, 13, [14, 15]]]
 singleArray = arrayWithinArray.flat(Infinity)
 console.log(singleArray) // [1,  2,  3,  4,  5,  6, 7,  8,  9, 10, 11, 12, 13, 14, 15]
