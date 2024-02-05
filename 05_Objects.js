@@ -19,6 +19,7 @@ console.log(student.hasOwnProperty('date')) // false
 console.log(student.email) // Using dot(.) notation
 console.log(student["email"]) // Using brackets
 
+
 // Take a Symbol represent as key and print it (Interview Question)
 let mySym = Symbol("hello")
 const student2 = {
@@ -31,6 +32,7 @@ const student2 = {
 }
 console.log(student2.mySym); // In this it is treated as string
 console.log(typeof student2.mySym); // string
+
 
 // To treated as Symbol use [mySym]
 const student3 = {
