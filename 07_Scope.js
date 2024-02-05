@@ -35,7 +35,6 @@ function addOne(num) {
 }
 
 
-
 // Function Hoisting -> Result of a function is hold by a variable 
 //in JS, variable hold anything
 console.log(addTwo(5)) // ERROR : Cannot access 'addTwo' before initialization
