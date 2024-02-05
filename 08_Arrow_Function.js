@@ -1,18 +1,15 @@
-const user = {  // object creation
+const user = {      // object creation
     username: 'Shiva',
     age: 22,
     welcomeMessage : function() {
         console.log(`${this.username}, welxome`) // this keyword talks about current context
         //console.log(this) // Run this
     }
-   
 }
 user.welcomeMessage() // Shiva, welcome
 user.username = 'Sumit'
 user.welcomeMessage() // Sumit, welxome
 console.log(this)     // {} -> Empty object [this is a global object in JS]
-
-
 
 
 
@@ -26,15 +23,12 @@ demo()
 
 
 
-
 // Arrow function
 const demo = () => {
     let name = 'Shiva'
     console.log(name)
 }
 demo()
-
-
 
 
 
@@ -97,4 +91,3 @@ console.log(val1)
 //Terniary operator
 const productPrice = 100
 productPrice < 100 ? console.log("buy") : console.log("not buy")
-
