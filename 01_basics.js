@@ -98,10 +98,10 @@ console.log(null === 0) // false
 console.log('5' === 5) //false because of different data type, string checks with a number
 console.log(5 === 5) //true
 
-
 /* Memory -> Stack, Heap
 Stack -> all primitive data types declared in stack, whatever you declared in this you get a copy of this
 Heap -> all non-primitive data types are declared in Heaps, whatever you declared in this you get reference of this  */
+
 
 let myname = 'shiva'
 let anothername = myname
