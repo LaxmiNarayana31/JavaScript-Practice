@@ -50,6 +50,7 @@ handleObject ({           // you can declare and pass an object during function 
 
 
 
+
 // Pass an array in fumction
 myArray = [67, 75, 85, 76, 41, 55]
 function returnArray(passAnyArray) {
