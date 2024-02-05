@@ -59,7 +59,6 @@ for (const i of values1) {
     console.log(i);
 }
 
-
 const myName = 'LaxmiNarayana'
 for (const i of myName) {
     console.log(i)
