@@ -12,6 +12,7 @@ console.log(anotherName) // [String: 'sumit']
 console.log(`Hello my name is ${name} and my age is ${age}`);
 
 
+
 // String method
 let str = 'Hello JavaScript'
 
