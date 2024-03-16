@@ -34,11 +34,9 @@
     // There is situation where i want to stop the event 
     const stopThis = setTimeout(changeText,3000)
 
-
     clearTimeout(stopThis)   // It will stop the execution of changeText after 3 seconds
     // It is not that useful. It is generally used for events
     
-
     document.querySelector('#stop').addEventListener('click',function(){
         clearTimeout(stopThis)
         console.log('STOPPED')
