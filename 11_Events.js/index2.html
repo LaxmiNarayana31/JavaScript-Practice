@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async JS</title>
+
+</head>
+<body style="background-color:darkslategray; color: white;">
+    <h1>Hello JavaScript</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("JavaScript");
+    // },2000)  // 2000 Miliseconds or 2 seconds
+
+
+    // Another way to write above function 
+    const demo = function(){
+        console.log("Hello JavaScript")
+    }
+    setTimeout(demo,3000)
+
+
+    // Timestamp : 4:28 Hour(part-2) in Chai aur Code 
+    
+    // Change the h1 tag text to "Hello TypeScript"
+    const changeText = function(){
+        document.querySelector("h1").innerHTML = "Hello TypeScript"
+    }
+    // setTimeout(changeText,3000)
+
+    // There is situation where i want to stop the event 
+    const stopThis = setTimeout(changeText,3000)
+
+
+    clearTimeout(stopThis)   // It will stop the execution of changeText after 3 seconds
+    // It is not that useful. It is generally used for events
+    
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(stopThis)
+        console.log('STOPPED')
+    })
+</script>
+</html>
