@@ -1,0 +1,54 @@
+<!-- Example of implementing asynchronous JavaScript using setInterval for continuous logging. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async JS</title>
+  </head>
+  <body style="background-color: gray; color: white">
+    <h1>Hello JavaScript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    
+    // setInterval(function(){
+    //    console.log("I'm still alive!"); // This is continuesly printed it in console
+    // }, 2000);
+
+
+    // Alternative implementation of above function
+    const demo = function (str) {
+      console.log(str); // str -> I'm alive!
+    };
+    // setInterval(demo, 5000, "I'm alive!");
+
+
+    // To stop the interval timer we can use clearInterval() method
+    const stopIt = setInterval(demo, 2000, "I'm alive!");
+    clearInterval(stopIt);
+
+
+
+
+    // Implement start and stop funcatalaties
+    const start = function () {
+      document.querySelector("#start").addEventListener("click", function () {
+        intervalId = setInterval(function () {
+          console.log("Java");
+        }, 1000);
+      });
+    };
+    start();
+
+    const stop = function (){
+      document.querySelector('#stop').addEventListener('click', function(){
+        clearInterval(intervalId)
+        console.log("Interval is stopped");
+      })
+    }
+    stop();
+
+  </script>
+</html>
