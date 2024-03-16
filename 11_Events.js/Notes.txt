@@ -1,0 +1,33 @@
+Default JavaScript behavior is:
+- Synchronous: JavaScript executes code in a sequential manner, one line at a time.
+- Single Threaded: JavaScript has a single thread of execution, which means it can only do one thing at a time.
+
+in Js, Execution Context is:
+- Execute one line of code at a time.
+- Each operation waits for the last one to complete before executing.
+
+For example:
+```javascript
+console.log('1');
+console.log('2'); ```
+
+
+CALL STACK: JavaScript uses a call stack to keep track of where it is in the code as it executes. Each time a function is called, a new frame is added to the top of the stack. When the function returns, its frame is removed from the stack.
+
+MEMORY HEAP: JavaScript also has a memory heap, where it stores all the variables and objects created during the execution of the code.
+
+Asynchronous JavaScript (Async JS) is a powerful concept that allows you to handle tasks without blocking the main execution thread.
+
+In JavaScript, code can be written in two formats: Blocking and Non-Blocking code.
+
+Blocking code:
+Blocks the flow of the program.
+Reads a file Synchronously (i.e., reads a file one line at a time and waits for the entire file to be read before moving on to the next line of code).
+Is single-threaded (i.e., can only do one thing at a time).
+Code executes sequentially.
+
+Non-Blocking code: 
+Does not block execution.
+Reads a file Asynchronously (i.e., reads a file in the background while the rest of the code continues to execute).
+Is multi-threaded (i.e., can do multiple things at once).
+Code can be executed simultaneously.
