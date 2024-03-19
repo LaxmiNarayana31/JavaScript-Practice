@@ -10,6 +10,7 @@ When a promise is created, it is always pending. Once a promise is fulfilled or 
 When a promise becomes settled, the JavaScript runtime calls any handler functions that you registered using .then(). The then() function takes 2 parameters: onFulfilled and onRejected. JavaScript calls onFulfilled() if the promise is fulfilled, or onRejected() if the promise is rejected. */
 
 
+
 // 1st promise
 const promiseOne = new Promise(function (resolve, reject) {
   // Promise created
@@ -43,6 +44,7 @@ new Promise(function (resolve, reject) {
 
 
 
+
 // 3rd promise
 const promiseThree = new Promise(function (resolve, reject) {
   setTimeout(function () {
@@ -58,6 +60,7 @@ const promiseThree = new Promise(function (resolve, reject) {
 promiseThree.then(function (user) {
   console.log(user);
 });
+
 
 
 
@@ -88,6 +91,7 @@ promiseFour.then((user) => {
 
 
 
+
 // 5th promise
 const promiseFive = new Promise(function (resolve, reject) {
     setTimeout(function () {
@@ -109,3 +113,4 @@ async function consumepromiseFive() {
    }
 }
 consumepromiseFive()
+
