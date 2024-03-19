@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Request</title>
+</head>
+<body style="background-color: black; color: white;">
+    
+<p>
+0	UNSENT	-> Client has been created. open() not called yet. <br>
+1	OPENED	-> open() has been called.  <br>
+2	HEADERS_RECEIVED  -> send() has been called, and headers and status are available. <br>
+3	LOADING	  -> Downloading; responseText holds partial data. <br>
+4	DONE    -> The operation is complete.
+</p>
+
+</body>
+<script>
+
+    // XML HTTP request
+    const requestUrl = "https://api.github.com/users/LaxmiNarayana31"
+    const xhr = new XMLHttpRequest();
+    xhr.open('get', requestUrl)
+    xhr.onreadystatechange = function() {
+        console.log(xhr.readyState); // states are chnged in console
+        if(xhr.readyState === 4){
+
+            console.log(this.responseText);
+
+            // const data = this.responseText
+            // console.log(data);
+
+            // console.log(typeof data); // string (when you receive response from url most of the time receive in form of string)
+
+
+            // to get followers convert string to JSON format
+            const data = JSON.parse(this.responseText)
+            console.log("followers:", data.followers); // undefiend
+        }
+    }
+    
+    // console.log(xhr.readyState);
+    xhr.send()
+
+    // console.log(); -> console.log is a debugging tool/dev tool of the browser. It is injected by run-time in JS.
+    // node.js is implementation of V8 Engine. V8 is written in C++
+    // JavaScript actually run in C++
+    // https://github.com/v8/v8/blob/main/src/d8/d8-console.cc -> This is console.log in JavaScript.
+</script>
+</html>
