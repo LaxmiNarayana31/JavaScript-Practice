@@ -49,7 +49,7 @@ const userFour = new User("Sumit", 12, false);
 console.log(userThree);
 
 
-// instance of operator
+// instanceof operator
 function Car(make, model, year) {
   this.make = make;
   this.model = model;
