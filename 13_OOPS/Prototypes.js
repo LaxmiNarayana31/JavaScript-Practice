@@ -12,8 +12,7 @@ Array ------> Object ------> null
 String ------> Object ------> null
 Function ------> Object ------> null
 
-Everything in JavaScript is an Object 
-*/
+Everything in JavaScript is an Object  */
 
-// 7:26:15
+7: 26: 15
  
