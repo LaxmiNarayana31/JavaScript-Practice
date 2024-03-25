@@ -8,11 +8,34 @@ The Object.prototype is on the top of the prototype inheritance chain:
 
 Date objects, Array objects, and Person objects inherit from Object.prototype.  
 
-Array ------> Object ------> null 
-String ------> Object ------> null
+Array    ------> Object ------> null 
+String   ------> Object ------> null
 Function ------> Object ------> null
 
 Everything in JavaScript is an Object  */
-
-// 7: 26: 15
  
+
+let myName = "Shiva"
+console.log(myName.length);
+
+let anotherName = "Sumit        "
+console.log(anotherName.trim().length);
+
+
+let myHeroes = ['thor', 'ironman', 'spiderman']
+let heroPower = {
+    thor: "hammer",
+    ironman: "ironsuite",
+    spiderman: "sling",
+    getSpiderPower: function () {
+        console.log(`Spidy power is ${this.spiderman}`);
+    }
+}
+
+
+Object.prototype.Shiva = function () {
+    console.log(`Shiva is present in all objects`);
+}
+
+heroPower.Shiva() // Output: Shiva is present in all objects
+myHeroes.Shiva()  // Output: Shiva is present in all objects
