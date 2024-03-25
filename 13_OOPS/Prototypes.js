@@ -37,5 +37,13 @@ Object.prototype.Shiva = function () {
     console.log(`Shiva is present in all objects`);
 }
 
+Array.prototype.Sumit = function(){
+    console.log("Sumit says Hello");
+}
+
+myHeroes.Shiva()
+myHeroes.Sumit()
+
 heroPower.Shiva() // Output: Shiva is present in all objects
 myHeroes.Shiva()  // Output: Shiva is present in all objects
+
