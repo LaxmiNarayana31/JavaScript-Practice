@@ -13,10 +13,17 @@ String   ------> Object ------> null
 Function ------> Object ------> null
 
 Everything in JavaScript is an Object  */
- 
+
+/* 
+this keyword refers to the global execution contest
+in global execution contest there is a problem, when you have access to window object this keyword refers to the window object  
+
+But in node envirnoment you don't have access to the window object you get empty object  node = {} -> Empty object
+*/
 
 let myName = "Shiva"
 console.log(myName.length);
+
 
 let anotherName = "Sumit        "
 console.log(anotherName.trim().length);
@@ -37,6 +44,7 @@ Object.prototype.Shiva = function () {
     console.log(`Shiva is present in all objects`);
 }
 
+
 Array.prototype.Sumit = function(){
     console.log("Sumit says Hello");
 }
@@ -47,3 +55,19 @@ myHeroes.Sumit()
 heroPower.Shiva() // Output: Shiva is present in all objects
 myHeroes.Shiva()  // Output: Shiva is present in all objects
 
+
+
+// Inheritance
+// Prototypical Inheritance
+
+let anotherUsername = "Shiva     ";
+String.prototype.trueLength = function () {
+    console.log(`${this}`);  // output: Shiva
+    console.log(`${this.name}`); // output: undefined
+    console.log(`True lenght is:${this.trim().length}`); // output: 5
+};
+
+anotherUsername.trueLength();
+
+"LaxmiNarayana".trueLength() // output: 13
+"Sumit".trueLength() // output: 5
