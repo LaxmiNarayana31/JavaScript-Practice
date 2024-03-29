@@ -28,7 +28,7 @@ user1.printMe();
 
 
 /*
-
+IMPORTANT: 
 Here's what happens behind the scenes when the new keyword is used:
 
 A new object is created: The new keyword initiates the creation of a new JavaScript object.
