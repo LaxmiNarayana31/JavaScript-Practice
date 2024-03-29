@@ -40,6 +40,7 @@ let heroPower = {
 }
 
 
+
 Object.prototype.Shiva = function () {
     console.log(`Shiva is present in all objects`);
 }
