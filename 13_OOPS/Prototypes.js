@@ -14,7 +14,7 @@ Function ------> Object ------> null
 
 Everything in JavaScript is an Object  */
 
-/* 
+/* Imp: 
 this keyword refers to the global execution contest
 in global execution contest there is a problem, when you have access to window object this keyword refers to the window object  
 
@@ -54,7 +54,6 @@ myHeroes.Sumit()
 
 heroPower.Shiva() // Output: Shiva is present in all objects
 myHeroes.Shiva()  // Output: Shiva is present in all objects
-
 
 
 // Inheritance
